@@ -23,8 +23,8 @@ const client = new MongoClient(uri, {
 async function connectDB() {
     try {
         // Connect MongoDB client
-        await client.connect();
-        console.log('MongoDB connected');
+        // // await client.connect();
+        // console.log('MongoDB connected');
 
         const moodsCollection = client.db("mood").collection("api");
 
